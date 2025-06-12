@@ -2,11 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const pacienteRoutes = require('./routes/pacientesRoutes')
 
+//  -----------------   Inicialização do express
 const app = express()                                    
 const PORT = process.env.PORT || 3000;  
 
 app.use(express.json())
 
+//  -----------------   Conexão com o BD - MongoDB
 const DB_URI = 'mongodb+srv://amancio:amesma@clinica-db.yqdbirb.mongodb.net/clinica_db?retryWrites=true&w=majority&appName=clinica-db';
 
 mongoose.connect(DB_URI)
@@ -17,7 +19,8 @@ mongoose.connect(DB_URI)
         console.error('Erro ao conectar ao MongoDB:', err.message);  
     });
 
-                                
+
+//  -----------------   Definição de rotas:
 
 app.get('/', (req, res) => {                             
     res.send('API da Clinica Médica Funcionando')
