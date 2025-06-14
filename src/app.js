@@ -8,8 +8,14 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json())
 
+app.use('/api', (req, res, next) => {
+    console.log(`Requisição recebida em /api${req.url} - Método: ${req.method}`);
+    next(); 
+}, pacienteRoutes); 
+
+
 //  -----------------   Conexão com o BD - MongoDB
-const DB_URI = 'mongodb+srv://amancio:amesma@clinica-db.yqdbirb.mongodb.net/clinica_db?retryWrites=true&w=majority&appName=clinica-db';
+const DB_URI = 'mongodb+srv://amancio:amesma@clinica-db.vkyh2tc.mongodb.net/?retryWrites=true&w=majority&appName=clinica-db';
 
 mongoose.connect(DB_URI)
     .then(() => {

@@ -74,7 +74,7 @@ const PacienteController = {
     async deletePaciente(req, res) {
         try {
             const { id } = req.params
-            const pacienteDeletado = await Paciente.findById(id)
+            const pacienteDeletado = await Paciente.findByIdAndDelete(id)
             console.log('Documento retornado por findByIdAndDelete:', pacienteDeletado)
 
             if (!pacienteDeletado) {

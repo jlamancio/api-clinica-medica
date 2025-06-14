@@ -1,16 +1,20 @@
 {
   "name": "api-clinica-medica",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "API RESTful para gerenciamento de pacientes e anamneses.",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "keywords": [],
-  "author": "José Luis Amancio",
+  "author": "",
   "license": "ISC",
-  "description": "Projeto: Construção de uma API para controle de uma clinica Médica",
   "dependencies": {
-    "express": "^5.1.0",
-    "mongoose": "^8.15.1"
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const pacienteSchema = new mongoose.Schema({
     nomeCompleto: {
         type: String,
-        requiered: true,
+        required: true,
         trim: true
     },
     cpf: {

@@ -11,12 +11,12 @@ Data Início: 03/06/25
 Data Final: 27/06/25
 
 ## 💻 Tecnologias:
-1 Node
-2 Npm
-3 Express
-4 JavaScript
-5 Git
-6 MongoDB
-7 Postman
+* Node - v22.15.1
+* Npm  - v11.4.1
+* Express
+* JavaScript
+* Git     - v2.49.0
+* MongoDB/Atlas
+* Postman - v11.49.0
 
 
