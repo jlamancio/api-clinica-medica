@@ -27,6 +27,6 @@ Data Final: 27/06/25
     * Git     - v2.49.0
     * Postman - v11.49.0
 
-> ## 🏢 Arquitetura da Aplicação: 
+  ## 🏢 Arquitetura da Aplicação: 
 
- ![Arquitetura da Aplicação](docs/Diagrama da Arquitetura.drawio.png)
+ ![Arquitetura da Aplicação](https://github.com/jlamancio/api-clinica-medica/blob/main/docs/Diagrama%20da%20Arquitetura.drawio.png?raw=true)
