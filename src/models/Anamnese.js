@@ -36,11 +36,26 @@ const anamneseSchema = new mongoose.Schema({
         trim: true,
         default: ''
     },
-    // Podem ser adicionados outros campos futuramente, como:
-    // historicoCirurgico: { type: String, trim: true, default: '' },
-    // examesFisicos: { type: String, trim: true, default: '' },
-    // diagnostico: { type: String, trim: true, default: '' },
-    // planoTratamento: { type: String, trim: true, default: '' }
+    historicoCirurgico: {
+        type: String,
+        trim: true,
+        default: ''
+    },
+    examesFisicos: {
+        type: String,
+        trim: true,
+        default: ''
+    },
+    diagnostico: {
+        type: String,
+        trim: true,
+        default: ''
+    },
+    planoTratamento: {
+        type: String,
+        trim: true,
+        default: ''
+    }
 }, {
     timestamps: true // Adiciona automaticamente campos `createdAt` e `updatedAt`
 });

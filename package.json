@@ -1,14 +1,24 @@
 {
   "name": "api-clinica-medica",
   "version": "1.0.0",
-  "description": "API RESTful para gerenciamento de pacientes e anamneses.",
+  "description": "API Restful para gerenciamento de pacientes e anamneses.",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "JavaScript",
+    "NOdeJs",
+    "MongoDb",
+    "Mongoose",
+    "Express",
+    "API Restful",
+    "API",
+    "Restful",
+    "Rest"
+  ],
+  "author": "Amancio",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
